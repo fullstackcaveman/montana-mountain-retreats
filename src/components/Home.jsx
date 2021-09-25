@@ -16,6 +16,22 @@ const Home = () => {
 							alt='Montana Mountain Retreats'
 						/>
 						<p>"Where Friends Gather and Creativity Lives"</p>
+						<div className='buttons'>
+							<a
+								href='https://shop.montanamountainretreats.com'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Button animated='fade' color='black' inverted>
+									<Button.Content visible inverted>
+										<Icon name='cart' size='large' />
+									</Button.Content>
+									<Button.Content hidden inverted>
+										SHOP
+									</Button.Content>
+								</Button>
+							</a>
+						</div>
 						<Button
 							circular
 							icon={<Icon name='angle double down' size='large' />}
