@@ -1,3 +1,25 @@
+.site-header {
+  background-color: darkslategray;
+}
+.site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.site-header nav a img {
+  height: 50px;
+}
 
+.main-content .home-content .hero-section {
+  width: 100%;
+}
+.main-content .home-content .hero-section .image {
+  background-image: url("https://res.cloudinary.com/fullstackcaveman/image/upload/v1632598139/Montana%20Mountain%20Retreats/7-bg-mount-011_x852bm.webp");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
 
 /*# sourceMappingURL=main.css.map */
