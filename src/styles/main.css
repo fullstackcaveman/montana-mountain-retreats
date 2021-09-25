@@ -1,25 +1,111 @@
-.site-header {
-  background-color: darkslategray;
+@font-face {
+  font-family: "Billion-Dreams";
+  src: local("Billion-Dreams"), url("../fonts/Billion-Dreams.TTF") format("truetype");
+  font-weight: normal;
 }
-.site-header nav {
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+body #root .main-content .hero-section {
+  position: relative;
+  height: 100vh;
+}
+body #root .main-content .hero-section .overlay {
+  height: 100vh;
+}
+body #root .main-content .hero-section .overlay .image {
+  background-image: url("https://res.cloudinary.com/fullstackcaveman/image/upload/v1632598139/Montana%20Mountain%20Retreats/7-bg-mount-011_x852bm.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+body #root .main-content .hero-section .overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  height: 100%;
+}
+body #root .main-content .hero-section .hero-section-content {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+body #root .main-content .hero-section .hero-section-content img {
+  width: 400px;
+}
+body #root .main-content .hero-section .hero-section-content h1 {
+  font-family: "Billion-Dreams", sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  color: white;
+}
+body #root .main-content .hero-section .hero-section-content p {
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+  font-style: italic;
+}
+body #root .main-content .hero-section .hero-section-content i {
+  color: white;
+  margin: 0;
+}
+body #root .main-content .hero-section .site-header {
+  width: 100%;
+}
+body #root .main-content .hero-section .site-header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 10px;
 }
-.site-header nav a img {
+body #root .main-content .hero-section .site-header nav a h2 {
+  font-family: "Billion-Dreams", sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: 100;
+}
+body #root .main-content .hero-section .site-header nav a img {
   height: 50px;
 }
-
-.main-content .home-content .hero-section {
-  width: 100%;
+body #root .main-content .schedule-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
 }
-.main-content .home-content .hero-section .image {
-  background-image: url("https://res.cloudinary.com/fullstackcaveman/image/upload/v1632598139/Montana%20Mountain%20Retreats/7-bg-mount-011_x852bm.webp");
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
+body #root .main-content .schedule-section .heading h1 {
+  font-family: "Billion-Dreams", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+}
+body #root .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+}
+body #root .footer p {
+  padding: 10px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

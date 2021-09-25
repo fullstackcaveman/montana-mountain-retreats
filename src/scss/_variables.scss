@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Billion-Dreams';
+	src: local('Billion-Dreams'),
+		url('../fonts/Billion-Dreams.TTF') format('truetype');
+	font-weight: normal;
+}
+
+// Fonts
+$logo-font: 'Billion-Dreams', sans-serif;
+
+// Colors
+$logo-color: white;
