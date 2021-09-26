@@ -17,14 +17,10 @@ const Home = () => {
 						/>
 						<p>"Where Friends Gather and Creativity Lives"</p>
 						<div className='buttons'>
-							<a
-								href='https://shop.montanamountainretreats.com'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
+							<a href='https://shop.montanamountainretreats.com'>
 								<Button animated='fade' color='black' inverted>
 									<Button.Content visible inverted>
-										<Icon name='cart' size='large' />
+										<Icon name='cart' size='large' color='teal' />
 									</Button.Content>
 									<Button.Content hidden inverted>
 										SHOP
@@ -32,13 +28,15 @@ const Home = () => {
 								</Button>
 							</a>
 						</div>
-						<Button
+						{/* <Button
 							circular
 							icon={<Icon name='angle double down' size='large' />}
 							inverted
 							color='black'
 							onClick={handleClick}
-						/>
+						/> */}
+						<p>Main Site is Under Construction</p>
+						<p>But Web Store is Operational!</p>
 					</div>
 				</div>
 			</div>
