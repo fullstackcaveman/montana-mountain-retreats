@@ -61,8 +61,15 @@ body #root .main-content .hero-section .hero-section-content i {
   color: white;
   margin: 0;
 }
-body #root .main-content .hero-section .hero-section-content .buttons {
+body #root .main-content .hero-section .hero-section-content .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 40px;
+}
+body #root .main-content .hero-section .hero-section-content .btn-container .buttons {
+  width: 200px;
 }
 body #root .main-content .hero-section .site-header {
   width: 100%;
@@ -109,6 +116,12 @@ body #root .footer {
 body #root .footer p {
   padding: 10px;
   margin: 0;
+}
+
+@media (max-width: 450px) {
+  #root .main-content .hero-section .overlay .hero-section-content img {
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

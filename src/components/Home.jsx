@@ -16,17 +16,17 @@ const Home = () => {
 							alt='Montana Mountain Retreats'
 						/>
 						<p>"Where Friends Gather and Creativity Lives"</p>
-						<div className='buttons'>
-							<a href='https://shop.montanamountainretreats.com'>
-								<Button animated='fade' color='black' inverted>
-									<Button.Content visible inverted>
-										<Icon name='cart' size='large' color='teal' />
-									</Button.Content>
-									<Button.Content hidden inverted>
-										SHOP
-									</Button.Content>
-								</Button>
-							</a>
+						<div className='btn-container'>
+							<div className='buttons'>
+								<a href='https://shop.montanamountainretreats.com'>
+									<Button animated='fade' primary size='big' fluid>
+										<Button.Content visible>
+											<Icon name='cart' size='large' />
+										</Button.Content>
+										<Button.Content hidden>SHOP</Button.Content>
+									</Button>
+								</a>
+							</div>
 						</div>
 						{/* <Button
 							circular
@@ -36,7 +36,7 @@ const Home = () => {
 							onClick={handleClick}
 						/> */}
 						<p>Main Site is Under Construction</p>
-						<p>But Web Store is Operational!</p>
+						<p>But The Web Store is Operational!</p>
 					</div>
 				</div>
 			</div>
